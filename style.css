@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.75;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.one {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.one .btn-text {
+  color: hsl(31, 77%, 52%);
+}
+
+.two {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.two .btn-text {
+  color: hsl(184, 100%, 22%);
+}
+.three {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.three .btn-text {
+  color: hsl(179, 100%, 13%);
+}
+.button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.btn-text {
+  line-height: normal;
+  font-weight: 700;
+}
+
+@media (min-width: 1440px) {
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+  }
+
+  .one {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .two{
+    padding: 3rem;
+  }
+
+  .three {
+    background-color:  hsl(179, 100%, 13%);
+    padding: 3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border-style: none;
+  }
+  h1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
